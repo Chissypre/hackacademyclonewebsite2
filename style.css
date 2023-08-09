@@ -109,7 +109,7 @@ li{
 
 /*HERO SECTION*/
   .hero{
-    background-image:url('/img/hero.jpg');
+    background-image:url('img/hero.jpg');
     background-size: cover;
     height:560px;
     background-position:center;
@@ -498,7 +498,7 @@ text-align: center;
   }
 /* SECTION 5 */
 .testimonialTitle {
-  background-image: url('/img/app2.jpg');
+  background-image: url('img/app2.jpg');
   background-size: cover;
   background-position: center;
   padding: 90px 96px;
