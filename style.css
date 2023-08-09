@@ -203,7 +203,7 @@ font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     
   }
   
-  .play-button img {
+  .play-button .img2 {
     width: 45px; 
     height: 45px; 
     z-index: 4;
