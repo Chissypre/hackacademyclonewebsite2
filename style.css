@@ -375,13 +375,15 @@ font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*SECTION 3 */
 .sect3{
   background-color: #47b475;
-  height: 600px;
+  height: auto;
   padding: 100px 96px;
   justify-content: center;
   display: flex;
 }
 .sect3content{
 text-align: center;
+max-width: 800px;
+margin: 0 auto;
 }
 .sect3content h3{
   font-size: 32px;
@@ -391,7 +393,7 @@ text-align: center;
   color: #ffffff;
 }
 .sect3content p{
-  margin-bottom: 20px;
+  margin-bottom:0;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
@@ -399,21 +401,24 @@ text-align: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    padding: 25px 210px;
+    padding: 25px 20px;
+}
+ iframe{
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
 }
 .iconsect3{
-  position: absolute;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  padding: 25px 250px;
+  padding: 25px 10px;
 }
 .iconsect3 img{
-  display: inline-block;
-  margin-left: 10px;
-   margin-right: 10px;
-   opacity: 0.5;
-   max-height: 30px;
-   max-width: 100%;
+  margin: 0 10px;
+  opacity: 0.5;
+  max-height: 30px;
+  max-width: 100%;
 
 
   
@@ -834,7 +839,7 @@ max-width: 500px;
   }
 
   .btn2{
-        margin:30px 40px;
+        margin:10px 120px;
         display: flex;
     }
 .sect2 {
@@ -843,9 +848,37 @@ overflow: hidden;
 width: 100%;
 }
 .copy{
-  padding: 20px 10px;
+  padding: 10px 5px;
+  margin: 10px;
 }
-
+.sect3{
+  margin: 0;
+  padding: 100px 46px;
+}
+.sect4-con{
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-top: 50px;
+  margin-bottom: 34px;
+}
+}
+@media screen and (max-width:900px){
+  .sect4{
+    padding: 100px 40px;
+  }
+  .sect4-con{
+    padding-top:0
+  }
+}
+@media screen and (max-width:890px){
+  .copy .text-center {
+    text-align: center;
+    max-width: 300px;
+  }
+  .btn2{
+    margin:10px 70px;
+    display: flex;
+}
 }
 @media screen and (max-width:812px){
   .header{
@@ -879,7 +912,7 @@ width: 100%;
 }
 ul {
   display: block;
-  margin:0;
+  margin-left: 10px;
   padding:1px;
 }
 
@@ -889,7 +922,7 @@ ul {
 } 
 li{
   padding: 1px;
-  margin:0;
+  margin: 0;
 }
 .fa-times{
     transform:rotate(180deg);
@@ -913,6 +946,44 @@ li{
   height: 95px;
 }
 }
+@media screen and (max-width:768px){
+  .sect3 {
+    padding: 50px 20px; 
+  }
+
+  .sect3content {
+    padding: 0 20px; 
+  }
+  .sect3content h3 {
+    font-size: 26px; 
+  }
+
+  .iconsect3 {
+    padding: 15px 0; 
+  }
+  .sect4-con{
+    padding-left: 20px;
+    padding-right: 5px;
+    
+  }
+}
+@media screen and (max-width:728px){
+  .sect4-con{
+    display: block;
+  }
+  .sect4-content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: block
+  }
+  .price-con{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
+}
 @media screen and (max-width:688px){
   .hero{
     padding-top: 20px;
@@ -926,20 +997,43 @@ li{
 .content h2 {
   font-size: 32px;
 } 
-@media screen and (max-width:650px){
+
+@media screen and (max-width:670px){
   .sect2 {
-    padding: 50px 40px;
+    padding: 5px 5px;
+  
   }
   .icon-container a img{
     margin: 0 80px;
 }
 .images-row {
-  
+  display: flex;
   flex-basis: 100%;
-  margin: 10px 10px;
+  margin: 20px 20px;
+}
+
+.copy .text-center {
+  text-align: center;
+  max-width:max-content;
+}
+.copy {
+    width: 100%;
+    max-width: 670px; 
+    margin: 0 auto;  
+    padding: 20px;
+    box-sizing: border-box;
+}
+.copy h3{
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 }
+
 @media screen and (max-width:450px){
   .icon-container a img{
     margin: 40px 80px;
@@ -985,6 +1079,22 @@ li{
      flex-direction: column;
     } 
 
+    .sect4-content p{
+      font-size: 14px;
+    line-height: 20px;
+    margin: 10px 5px;
+    }
+    
+    .sect4 h3{
+      font-size: 28px;
+    }
+    .price-con{
+      margin: 10px 5px;
+      justify-content: center;
+      text-align: center;
+    }
+    
+
 } 
 @media screen and (max-width:360px){
 .hero{
@@ -995,7 +1105,14 @@ li{
   top: 88%;
   
 }
+.sect1{
+  padding: 40px 0;
 }
+.copy .btn2{
+  margin-left: 46px;
+}
+}
+
 @media screen and (max-width:320px){
   .sect1 h4 {
     font-size: 12px;
