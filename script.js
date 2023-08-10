@@ -1,3 +1,14 @@
+//NAVIGATION BAR SECTION
+ const bar=document.querySelector(".fa-bars")
+ const hero=document.querySelector(".hero")
+const menu=document.querySelector(".menu")
+bar.addEventListener("click",()=>{
+    menu.classList.toggle("show-menu")
+    hero.classList.toggle("hero-resp")
+    bar.classList.toggle("fa-times")
+}) 
+
+
 //TESTIMONIAL SECTION
 let currentSlide = 0;
     const testimonials = document.querySelectorAll('.testimonial');
